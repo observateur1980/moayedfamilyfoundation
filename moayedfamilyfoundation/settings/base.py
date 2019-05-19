@@ -1,5 +1,4 @@
 
-
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -13,10 +12,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__fil
 SECRET_KEY = 'y2r&f+wd15+h48hq_da6ojmt@cdf8^$p8ub43&#&$6mfl2_!6a'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
 
-
+DEBUG = False 
 
 ALLOWED_HOSTS = []
 
@@ -113,11 +111,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+
+
+# PAR : /we made it herer commented because anyhow we gonna define STATIC_URL and STATICFILES_DIRS variables in our production.py and local.py files
 STATIC_URL = '/static/'
-# Add these new lines
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
 
 
 
